@@ -6,7 +6,7 @@ logpush = true
 
 # Specifies the r2 buckets. r2 bucket names are scoped to your account (not global). The buckets should be publicly inaccessible.
 r2_buckets = [
-    { binding = "ATTACHMENT_BUCKET", bucket_name = "attachments-staging", preview_bucket_name = "attachments-staging" },
+    { binding = "ATTACHMENT_BUCKET", bucket_name = "media-staging", preview_bucket_name = "media-staging" },
     { binding = "BACKUP_BUCKET", bucket_name = "backups-staging", preview_bucket_name = "backups-staging" }
 ]
 
@@ -31,7 +31,7 @@ durable_objects.bindings = [
     { name = "BACKUP_UPLOAD_HANDLER", class_name = "BackupUploadHandler" }
 ]
 r2_buckets = [
-    { binding = "ATTACHMENT_BUCKET", bucket_name = "attachments", preview_bucket_name = "attachments" },
+    { binding = "ATTACHMENT_BUCKET", bucket_name = "media", preview_bucket_name = "media" },
     { binding = "BACKUP_BUCKET", bucket_name = "backups", preview_bucket_name = "backups" }
 ]
 
@@ -42,7 +42,7 @@ durable_objects.bindings = [
     { name = "BACKUP_UPLOAD_HANDLER", class_name = "BackupUploadHandler" }
 ]
 r2_buckets = [
-    { binding = "ATTACHMENT_BUCKET", bucket_name = "attachments-staging", preview_bucket_name = "attachments-staging" },
+    { binding = "ATTACHMENT_BUCKET", bucket_name = "media-staging", preview_bucket_name = "media-staging" },
     { binding = "BACKUP_BUCKET", bucket_name = "backups-staging", preview_bucket_name = "backups-staging" }
 ]
 
